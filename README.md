@@ -32,6 +32,10 @@ npm test
 
 You should see `winners: 1` and `PASS: token was single-use.`
 
+## Test Verification Output
+
+- Observed winners count: `winners: 1` (single-use guaranteed under concurrent access via Redis `GETDEL`).
+
 ## Submit
 
 Open a Pull Request containing your `token-service.js`, `test.js`, and paste the
